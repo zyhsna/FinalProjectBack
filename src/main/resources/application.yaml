@@ -1,0 +1,25 @@
+server:
+  port: 8081  # 后端运行端口
+
+
+
+spring:
+  # 配置redis数据库信息
+  redis:
+
+    password: Zyh20000205
+    host: r-bp1xwffnvxv3d4je3xpd.redis.rds.aliyuncs.com
+    port: 6379
+  # 配置mysql信息
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver  # 驱动名字
+
+    url: jdbc:mysql://rm-uf671a0nb8p8i270eao.mysql.rds.aliyuncs.com/final_project  #服务器地址
+    username: root
+    password: Zyh20000205
+
+# 配置mybatis日志工具
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
