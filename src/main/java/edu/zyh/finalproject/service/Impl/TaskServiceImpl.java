@@ -167,7 +167,7 @@ public class TaskServiceImpl implements TaskService {
         if (price == 0) {
             price = 2500;
         }
-        int taskLevel;
+        int taskLevel = 2;
         try {
             //python分配任务等级
             taskLevel = SendMessage.getTaskLevel(price, distance);
